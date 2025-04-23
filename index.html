@@ -1,8 +1,39 @@
 ﻿<!DOCTYPE html>
-<title>唯小叶的网站</title>
-<meta charset="UTF-8">
-<html lang=" zh">
+<!-- 他妈的不打注释别干了ok？？？？ -->
+
+<html lang="zh">
+<head>
+    <title>唯小叶的网站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 启动加载过程
+        function showConfirmDialog() {
+            // 显示确认对话框
+            var userConfirmed = window.confirm("您必须遵守以下条款，否则你无法进入该网站！！！！\n该网页上部分内容为网络素材，如果不小心侵犯了您的著作权\n请加qq：1570918781反应这件事，我第一时间看到之后会处理这件事，谢谢配合！");
+
+            // 根据用户的选择执行操作
+            if (userConfirmed) {
+                alert("欢迎光临我的网站--by唯小叶&\n（本网站基本上不打广告，请放心浏览：）");
+                // 在这里可以执行继续操作的代码
+            } else {
+                alert("你选择了取消，很抱歉你不能进入我的网站，您将被重定向到其他页面。");
+                // 将用户重定向到其他页面（模拟“踢出”网站）
+                window.location.href = "https://www.baidu.com"; // 替换为实际的退出或重定向URL
+
+            }
+        }
+
+        // 页面加载完成后自动显示弹窗（仅用于演示，实际应用中可能需要通过按钮触发）
+        window.onload = function () {
+            showConfirmDialog();
+        };
+
+    </script>
+
+</head>
 <body>
+
     <div>
         hello world
     </div>
@@ -20,5 +51,7 @@
             <br />
             群qq 984440341
     </div>
+
+
 </body>
 </html>
